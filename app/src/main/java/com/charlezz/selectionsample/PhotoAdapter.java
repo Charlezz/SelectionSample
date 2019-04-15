@@ -70,6 +70,7 @@ public class PhotoAdapter extends RecyclerView.Adapter<LookUpViewHolder> {
             Photo photo = new Photo(name, path);
             photoList.add(photo);
         }
+        cursor.close();
         return photoList;
     }
 
